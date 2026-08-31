@@ -1,0 +1,8 @@
+{
+    "checkpoint": "/home/DanielH/Optical_Flow/NFlowNet/model_weights.pth",
+    "root": "/home/DanielH/Optical_Flow/Datasets/TartanAir",
+    "loss": {
+        "Amusement": 55.5380776327189,
+        "Carwelding": 70.74657215059152
+    }
+}

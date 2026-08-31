@@ -1,0 +1,48 @@
+# Python caches and test artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.ipynb_checkpoints/
+
+# Local environments
+.venv/
+venv/
+env/
+
+# Build outputs
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+compile_commands.json
+Makefile
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*~
+.DS_Store
+
+# Large local data and generated experiment products
+Datasets/
+analysis/
+results/
+res_d/
+Results_Drone/
+Results_MVSEC/
+NFlowNet/Results/
+E-MoFlow/outputs/
+EvMotionSeg/data/
+VecKM_flow/outputs/
+event-cam-prop-tracker/runs/
+
+# Model weights and checkpoints
+event_suppression/checkpoints/
+depthanyevent/weights/
+VecKM_flow/train/checkpoints/
+VecKM_flow/train/model_checkpoints/
