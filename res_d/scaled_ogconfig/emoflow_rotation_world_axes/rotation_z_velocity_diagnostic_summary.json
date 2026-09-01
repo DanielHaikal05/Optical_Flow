@@ -1,0 +1,45 @@
+{
+  "source_csv": "Results_Drone/scaled_ogconfig/emoflow_rotation_world_axes/seq4_0700_1000_pose_velocity_emoflow_rotation.csv",
+  "z_up_plot": "Results_Drone/scaled_ogconfig/emoflow_rotation_world_axes/relative_world_pose_velocity_emoflow_rotation_zup.png",
+  "z_velocity_diagnostic_plot": "Results_Drone/scaled_ogconfig/emoflow_rotation_world_axes/camera_vs_world_z_velocity_rotation_diagnostic.png",
+  "velocity_mean_abs_diff_xyz": [
+    0.20426293963867256,
+    0.15473039373121875,
+    0.08607446743640014
+  ],
+  "velocity_max_abs_diff_xyz": [
+    0.9605309588006625,
+    0.8376366790412677,
+    0.40468052030322005
+  ],
+  "velocity_z_correlation_camera_world": 0.9982909385818,
+  "velocity_z_mean_abs_diff": 0.08607446743640014,
+  "velocity_z_max_abs_diff": 0.40468052030322005,
+  "pose_mean_abs_diff_xyz": [
+    0.3489703364850595,
+    0.16710853565430425,
+    0.036032362994817116
+  ],
+  "pose_max_abs_diff_xyz": [
+    0.9061452833251118,
+    0.4130341979333683,
+    0.12054018377318165
+  ],
+  "pose_z_mean_abs_diff": 0.036032362994817116,
+  "final_camera_position": [
+    -0.040047207163439465,
+    0.20672246227483654,
+    -8.622076671753637
+  ],
+  "final_world_position": [
+    -0.750325415778523,
+    0.5089092556191531,
+    -8.597919122697247
+  ],
+  "final_rpy_deg": [
+    1.4489538880057973,
+    11.979785022512965,
+    -22.137937107101024
+  ],
+  "interpretation": "World z stays close to camera z because the integrated E-MoFlow orientation is dominated by yaw; yaw does not mix x/y into z. Roll/pitch do contribute, and their nonzero contribution is shown by v_world_z - v_cam_z."
+}

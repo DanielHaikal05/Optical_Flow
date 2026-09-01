@@ -1,0 +1,18 @@
+{
+  "indoor_flying1": {
+    "intervals": 50,
+    "rms_velocity_m_per_s": 0.078297191135565,
+    "mean_absolute_velocity_error_m_per_s": 0.059288469527797434,
+    "mean_direction_angular_error_deg": 39.013555030778576,
+    "median_direction_angular_error_deg": 32.77100028775074,
+    "plot_path": "/home/daniel/Optical_Flow/VecKM_flow/outputs/mvsec_flow_egomotion_random_group_official_uncapped/plots/indoor_flying1_velocity_vs_gt.png"
+  },
+  "indoor_flying2": {
+    "intervals": 50,
+    "rms_velocity_m_per_s": 0.13909672895204428,
+    "mean_absolute_velocity_error_m_per_s": 0.11787207248878163,
+    "mean_direction_angular_error_deg": 23.025999592242528,
+    "median_direction_angular_error_deg": 22.15949057500392,
+    "plot_path": "/home/daniel/Optical_Flow/VecKM_flow/outputs/mvsec_flow_egomotion_random_group_official_uncapped/plots/indoor_flying2_velocity_vs_gt.png"
+  }
+}

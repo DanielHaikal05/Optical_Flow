@@ -1,0 +1,90 @@
+{
+  "sequence": "zurich_city_00_a",
+  "sequence_dir": "/home/daniel/Optical_Flow/Datasets/DSEC/zurich_city_00_a",
+  "sample_dir": "analysis/event_suppression_dsec_50k_uniform_20260817_112000/zurich_city_00_a/zurich_city_00_a_global50k_p0p75",
+  "output_dir": "analysis/event_suppression_dsec_50k_uniform_20260817_112000/zurich_city_00_a/event_suppression",
+  "checkpoint": "/home/daniel/Optical_Flow/event_suppression/checkpoints/event_suppression_checkpoints/model_epoch_49.pth",
+  "config": "/home/daniel/Optical_Flow/event_suppression/evsup/configs/validate_evimo.json",
+  "representation": "normalized signed-polarity two-bin voxel grid",
+  "threshold": 0.5,
+  "num_intervals": 470,
+  "total_sampled_events": 19840539,
+  "mean_dynamic_fraction": 0.0029866674977836877,
+  "median_dynamic_fraction": 0.002587890625,
+  "max_dynamic_fraction": 0.012682291666666666,
+  "nonzero_mask_frames": 470,
+  "frames_over_1pct": 3,
+  "frames_over_5pct": 0,
+  "top_dynamic_fraction_frames": [
+    [
+      90,
+      0.012682291666666666
+    ],
+    [
+      83,
+      0.011682942708333333
+    ],
+    [
+      92,
+      0.010608723958333333
+    ],
+    [
+      329,
+      0.009778645833333334
+    ],
+    [
+      232,
+      0.009671223958333334
+    ],
+    [
+      94,
+      0.009326171875
+    ],
+    [
+      93,
+      0.009293619791666667
+    ],
+    [
+      245,
+      0.009261067708333333
+    ],
+    [
+      91,
+      0.008707682291666666
+    ],
+    [
+      418,
+      0.0083984375
+    ]
+  ],
+  "sampler_summary": {
+    "sequence_dir": "/home/daniel/Optical_Flow/Datasets/DSEC/zurich_city_00_a",
+    "events_path": "/home/daniel/Optical_Flow/Datasets/DSEC/zurich_city_00_a/event_data/left/events.h5",
+    "rectify_path": "/home/daniel/Optical_Flow/Datasets/DSEC/zurich_city_00_a/event_data/left/rectify_map.h5",
+    "calibration_path": "/home/daniel/Optical_Flow/Datasets/DSEC/zurich_city_00_a/calibration/cam_to_cam.yaml",
+    "output_dir": "/home/daniel/Optical_Flow/analysis/event_suppression_dsec_50k_uniform_20260817_112000/zurich_city_00_a/zurich_city_00_a_global50k_p0p75",
+    "interval_s": 0.1,
+    "start_interval": 0,
+    "num_intervals": 470,
+    "sampling_mode": "global",
+    "max_events_per_interval": 50000,
+    "grid_cols": null,
+    "grid_rows": null,
+    "max_events_per_grid_cell": null,
+    "density_power": null,
+    "density_offset": null,
+    "grid_cell_count": null,
+    "grid_max_events_per_interval": null,
+    "seed": 7,
+    "width": 640,
+    "height": 480,
+    "fx": 583.3081203392971,
+    "fy": 583.3081203392971,
+    "cx": 336.83414459228516,
+    "cy": 220.91131019592285,
+    "written_events": 19840539,
+    "mean_written_events_per_interval": 42213.912765957444,
+    "flow_source": "VecKM DSEC normal flow, run after this sampling step",
+    "coordinate_source": "DSEC rectified event pixels from rectify_map.h5"
+  }
+}

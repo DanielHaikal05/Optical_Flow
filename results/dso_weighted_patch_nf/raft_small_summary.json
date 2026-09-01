@@ -1,0 +1,26 @@
+{
+  "sequence_root": "/home/daniel/Optical_Flow/Datasets/TartanAir/Office",
+  "dev_pairs": 5,
+  "eval_pairs": 80,
+  "grid_step": 80,
+  "device": "cuda",
+  "weights": "C_T_V2",
+  "num_flow_updates": 12,
+  "summary": {
+    "valid_points": 1222,
+    "mean_abs_normal_error": 0.9176126316208058,
+    "median_abs_normal_error": 0.6002540588378906,
+    "p90_abs_normal_error": 1.7619049787521368,
+    "rmse": 1.6924766727606795,
+    "aepe": 0.9176126540834374,
+    "bad_0p5": 0.5556464811783961,
+    "bad_1": 0.3060556464811784,
+    "bad_2": 0.07774140752864157,
+    "seconds": 7.18911417300842,
+    "ms_per_frame": 89.86392716260525
+  },
+  "forward_only": {
+    "seconds": 6.014092071010964,
+    "ms_per_frame": 75.17615088763705
+  }
+}

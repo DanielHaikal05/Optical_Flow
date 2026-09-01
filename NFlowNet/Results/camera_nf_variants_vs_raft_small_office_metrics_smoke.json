@@ -1,0 +1,124 @@
+{
+  "sequence_root": "/home/daniel/Optical_Flow/Datasets/TartanAir/Office",
+  "pairs": 3,
+  "selection": {
+    "grid_step": 120,
+    "patch_radius": 2,
+    "mean_points_per_pair": 23.0,
+    "min_points_per_pair": 23,
+    "max_points_per_pair": 23
+  },
+  "device": "cuda",
+  "raft": {
+    "weights": "C_T_V2",
+    "num_flow_updates": 12
+  },
+  "metrics_note": "Metrics are computed at identical selected GT-valid and baseline-gradient-valid points for every method. RMSE is scalar normal-flow RMSE in pixels/frame. AEPE is vector endpoint error after comparing predicted normal-flow vectors to TartanAir normal-flow GT vectors.",
+  "timing_note": "Camera_NF timing covers image read, preprocessing, and each method's flow computation. RAFT-small timing covers image read, TorchVision transforms, model forward, and CPU transfer; forward_only covers the synchronized model forward pass.",
+  "affine_brightness_debug": {
+    "affine_mean": {
+      "a_prev": 1.0,
+      "b_prev": 7.9308169101638e-17,
+      "a_next": 0.9600538810094198,
+      "b_next": 0.03627529243628184
+    },
+    "patch_affine_mean": {
+      "a_prev": 1.0,
+      "b_prev": 7.9308169101638e-17,
+      "a_next": 0.9600538810094198,
+      "b_next": 0.03627529243628184
+    }
+  },
+  "methods": {
+    "baseline": {
+      "selected": {
+        "tested_points": 69,
+        "valid_points": 69,
+        "frames": 3,
+        "valid_fraction": 1.0,
+        "rmse": 2.9544573354642987,
+        "mae_scalar": 1.8028506956238677,
+        "aepe": 1.804884482121122,
+        "timing": {
+          "seconds": 0.05062359800001559,
+          "ms_per_pair": 16.874532666671865,
+          "pairs_per_second": 59.260900420374625,
+          "ms_per_valid_point": 0.7336753333335593
+        }
+      }
+    },
+    "affine": {
+      "selected": {
+        "tested_points": 69,
+        "valid_points": 69,
+        "frames": 3,
+        "valid_fraction": 1.0,
+        "rmse": 2.987066391304599,
+        "mae_scalar": 1.8438996577608413,
+        "aepe": 1.8459118829257246,
+        "timing": {
+          "seconds": 0.12853906900011225,
+          "ms_per_pair": 42.84635633337075,
+          "pairs_per_second": 23.339207474712456,
+          "ms_per_valid_point": 1.8628850579726413
+        }
+      }
+    },
+    "patch": {
+      "selected": {
+        "tested_points": 69,
+        "valid_points": 69,
+        "frames": 3,
+        "valid_fraction": 1.0,
+        "rmse": 2.387487664188316,
+        "mae_scalar": 0.9046293203381525,
+        "aepe": 0.9419379026993461,
+        "timing": {
+          "seconds": 0.15308383900003264,
+          "ms_per_pair": 51.02794633334421,
+          "pairs_per_second": 19.597104564377695,
+          "ms_per_valid_point": 2.2186063623193135
+        }
+      }
+    },
+    "patch_affine": {
+      "selected": {
+        "tested_points": 69,
+        "valid_points": 69,
+        "frames": 3,
+        "valid_fraction": 1.0,
+        "rmse": 2.395053881437039,
+        "mae_scalar": 0.9208465797313745,
+        "aepe": 0.9585229624872622,
+        "timing": {
+          "seconds": 0.22607657700007167,
+          "ms_per_pair": 75.35885900002388,
+          "pairs_per_second": 13.269839979924365,
+          "ms_per_valid_point": 3.2764721304358213
+        }
+      }
+    },
+    "raft_small": {
+      "selected": {
+        "tested_points": 69,
+        "valid_points": 69,
+        "frames": 3,
+        "valid_fraction": 1.0,
+        "rmse": 0.7455913224875068,
+        "mae_scalar": 0.4789968504421953,
+        "aepe": 0.4789968573528787,
+        "timing": {
+          "seconds": 3.1876919939999198,
+          "ms_per_pair": 1062.5639979999733,
+          "pairs_per_second": 0.9411197837328055,
+          "ms_per_valid_point": 46.19843469565101
+        },
+        "forward_only_timing": {
+          "seconds": 2.663167853999994,
+          "ms_per_pair": 887.722617999998,
+          "pairs_per_second": 1.126478000811738
+        }
+      }
+    }
+  }
+}

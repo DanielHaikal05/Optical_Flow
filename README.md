@@ -29,12 +29,13 @@ These directories are upstream or adapted project checkouts with local changes:
 Large data and generated research outputs are intentionally separated from source:
 
 - `Datasets/` - local datasets. This is very large and should usually be omitted when sharing code.
-- `results/`, `res_d/`, `analysis/`, `Results_Drone/`, `Results_MVSEC/`, `NFlowNet/Results/`, `E-MoFlow/outputs/`, `EvMotionSeg/data/`, `VecKM_flow/outputs/` - generated outputs, metrics, plots, and experiment products.
+- `results/`, `res_d/`, `analysis/`, `Results_Drone/`, `Results_MVSEC/`, `NFlowNet/Results/` - selected lightweight reports, plots, metrics, summaries, and handoff artifacts are tracked.
+- `E-MoFlow/outputs/`, `EvMotionSeg/data/`, `VecKM_flow/outputs/` - generated outputs inside embedded project checkouts remain local-only unless those checkouts are flattened or handled as separate repositories.
 - `event_suppression/checkpoints/`, `depthanyevent/weights/`, `VecKM_flow/train/checkpoints/`, `VecKM_flow/train/model_checkpoints/` - model weights/checkpoints.
 
 ## Sharing Notes
 
-The workspace has been cleaned of local caches, Python bytecode, a local virtualenv, CMake build output, and log files. For a lightweight code handoff, share the source directories and omit `Datasets/`, large output folders, and checkpoints unless the recipient specifically needs them.
+The workspace has been cleaned of local caches, Python bytecode, a local virtualenv, CMake build output, and log files. For a lightweight code handoff, share the source directories, tracked result summaries/plots, and omit `Datasets/`, frame outputs, raw arrays, videos, large output folders, and checkpoints unless the recipient specifically needs them.
 
 Run the root tests with:
 

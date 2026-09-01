@@ -1,0 +1,46 @@
+{
+  "sequence_root": "/home/daniel/Optical_Flow/Datasets/TartanAir/Office",
+  "pairs": 2,
+  "device": "cuda",
+  "raft": {
+    "weights": "C_T_V2",
+    "num_flow_updates": 12
+  },
+  "metrics_note": "RMSE is scalar normal-flow RMSE in pixels/frame. AEPE is vector endpoint error after comparing predicted normal-flow vectors to TartanAir normal-flow GT vectors. gt_valid uses all GT-valid normal-flow pixels; common uses GT-valid pixels where Camera_NF also passes its gradient threshold.",
+  "camera_nf": {
+    "gt_valid": {
+      "pixels": 153491,
+      "frames": 2,
+      "rmse": 3.3289294808137018,
+      "mae_scalar": 2.5191067798763447,
+      "aepe": 2.581358597572496,
+      "mean_coverage": 0.5812100842093988
+    },
+    "common": {
+      "pixels": 89211,
+      "frames": 2,
+      "rmse": 2.940922270839277,
+      "mae_scalar": 2.0703900023539696,
+      "aepe": 2.177496328928047,
+      "mean_coverage": 0.5812100842093988
+    }
+  },
+  "raft_small": {
+    "gt_valid": {
+      "pixels": 153491,
+      "frames": 2,
+      "rmse": 0.5943196801912594,
+      "mae_scalar": 0.39194481730606356,
+      "aepe": 0.39194481730606356,
+      "mean_coverage": 0.5812100842093988
+    },
+    "common": {
+      "pixels": 89211,
+      "frames": 2,
+      "rmse": 0.5636835629396679,
+      "mae_scalar": 0.3761773461407506,
+      "aepe": 0.3761773461407506,
+      "mean_coverage": 0.5812100842093988
+    }
+  }
+}

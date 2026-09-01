@@ -1,0 +1,266 @@
+{
+  "sequence_root": "/home/daniel/Optical_Flow/Datasets/TartanAir/Office",
+  "dso_output_root": "/home/daniel/Optical_Flow/NFlowNet/Results/dso_office_smoke",
+  "num_gt_pairs": 611,
+  "camera_assumption": {
+    "fx": 320.0,
+    "fy": 320.0,
+    "cx": 320.0,
+    "cy": 240.0,
+    "width": 640,
+    "height": 480,
+    "note": "TartanAir Office calibration was not present in the local folder; this run uses the standard 640x480, 90-degree-FOV pinhole assumption."
+  },
+  "metric_note": "DSO outputs are sparse. RMSE is scalar normal-flow RMSE in pixels/frame; AEPE is endpoint error between DSO-derived sparse normal-flow vectors and GT normal-flow vectors sampled at the same DSO point locations.",
+  "counts": {
+    "evaluated_snapshot_rows": 194849,
+    "latest_unique_sparse_points": 230418,
+    "skipped": {
+      "no_pair": 0,
+      "missing_pose": 61743,
+      "invalid_projection": 61,
+      "outside_image": 0,
+      "invalid_gt": 9548
+    }
+  },
+  "timing": {
+    "dso_run_seconds": 4.688872445000015,
+    "dso_ms_per_input_frame": 7.661556282679764,
+    "evaluation_seconds": 17.057314240999403,
+    "evaluation_ms_per_evaluated_point": 0.08754119467382128
+  },
+  "snapshot_metrics": {
+    "active": {
+      "tested_points": 40989,
+      "valid_points": 40989,
+      "valid_fraction": 1.0,
+      "rmse": 1.2210166868553094,
+      "mae_scalar": 0.21122836243021254,
+      "aepe": 0.2112283624302126
+    },
+    "active_nonfinal": {
+      "tested_points": 40989,
+      "valid_points": 40989,
+      "valid_fraction": 1.0,
+      "rmse": 1.2210166868553094,
+      "mae_scalar": 0.21122836243021254,
+      "aepe": 0.2112283624302126
+    },
+    "all": {
+      "tested_points": 194849,
+      "valid_points": 194849,
+      "valid_fraction": 1.0,
+      "rmse": 1.797761407745617,
+      "mae_scalar": 0.3093926239871756,
+      "aepe": 0.30939262398717543
+    },
+    "all_final": {
+      "tested_points": 16723,
+      "valid_points": 16723,
+      "valid_fraction": 1.0,
+      "rmse": 1.0837850114063359,
+      "mae_scalar": 0.1977772721146953,
+      "aepe": 0.19777727211469542
+    },
+    "all_nonfinal": {
+      "tested_points": 178126,
+      "valid_points": 178126,
+      "valid_fraction": 1.0,
+      "rmse": 1.85070170663353,
+      "mae_scalar": 0.3198714060255303,
+      "aepe": 0.3198714060255304
+    },
+    "immature": {
+      "tested_points": 100540,
+      "valid_points": 100540,
+      "valid_fraction": 1.0,
+      "rmse": 2.1532767660605194,
+      "mae_scalar": 0.3922246618230311,
+      "aepe": 0.3922246618230315
+    },
+    "immature_final": {
+      "tested_points": 4015,
+      "valid_points": 4015,
+      "valid_fraction": 1.0,
+      "rmse": 0.22005701696750907,
+      "mae_scalar": 0.12231309182898181,
+      "aepe": 0.12231309182898167
+    },
+    "immature_nonfinal": {
+      "tested_points": 96525,
+      "valid_points": 96525,
+      "valid_fraction": 1.0,
+      "rmse": 2.19714542698049,
+      "mae_scalar": 0.4034517527686533,
+      "aepe": 0.4034517527686537
+    },
+    "marginalized": {
+      "tested_points": 41958,
+      "valid_points": 41958,
+      "valid_fraction": 1.0,
+      "rmse": 0.30023921127917136,
+      "mae_scalar": 0.11587404072976196,
+      "aepe": 0.11587404072976205
+    },
+    "marginalized_final": {
+      "tested_points": 11200,
+      "valid_points": 11200,
+      "valid_fraction": 1.0,
+      "rmse": 0.37634755060083275,
+      "mae_scalar": 0.12492880127963288,
+      "aepe": 0.12492880127963284
+    },
+    "marginalized_nonfinal": {
+      "tested_points": 30758,
+      "valid_points": 30758,
+      "valid_fraction": 1.0,
+      "rmse": 0.26719461500162545,
+      "mae_scalar": 0.11257690443486215,
+      "aepe": 0.11257690443486212
+    },
+    "outlier": {
+      "tested_points": 11362,
+      "valid_points": 11362,
+      "valid_fraction": 1.0,
+      "rmse": 2.947131666931085,
+      "mae_scalar": 0.6451939397111996,
+      "aepe": 0.6451939397111994
+    },
+    "outlier_final": {
+      "tested_points": 1508,
+      "valid_points": 1508,
+      "valid_fraction": 1.0,
+      "rmse": 3.441622015914935,
+      "mae_scalar": 0.9397478007617982,
+      "aepe": 0.9397478007617985
+    },
+    "outlier_nonfinal": {
+      "tested_points": 9854,
+      "valid_points": 9854,
+      "valid_fraction": 1.0,
+      "rmse": 2.8639348129994024,
+      "mae_scalar": 0.6001170955398706,
+      "aepe": 0.6001170955398706
+    }
+  },
+  "latest_unique_metrics": {
+    "active_latest_unique": {
+      "tested_points": 14415,
+      "valid_points": 14415,
+      "valid_fraction": 1.0,
+      "rmse": 1.3752648671180112,
+      "mae_scalar": 0.2416933447402937,
+      "aepe": 0.24169334474029364
+    },
+    "active_nonfinal_latest_unique": {
+      "tested_points": 14415,
+      "valid_points": 14415,
+      "valid_fraction": 1.0,
+      "rmse": 1.3752648671180112,
+      "mae_scalar": 0.2416933447402937,
+      "aepe": 0.24169334474029364
+    },
+    "all_latest_unique": {
+      "tested_points": 39943,
+      "valid_points": 39943,
+      "valid_fraction": 1.0,
+      "rmse": 2.934222756175888,
+      "mae_scalar": 0.627756324389582,
+      "aepe": 0.6277563243895818
+    },
+    "all_final_latest_unique": {
+      "tested_points": 16723,
+      "valid_points": 16723,
+      "valid_fraction": 1.0,
+      "rmse": 1.0837850114063359,
+      "mae_scalar": 0.1977772721146953,
+      "aepe": 0.19777727211469542
+    },
+    "all_nonfinal_latest_unique": {
+      "tested_points": 39943,
+      "valid_points": 39943,
+      "valid_fraction": 1.0,
+      "rmse": 2.934222756175888,
+      "mae_scalar": 0.627756324389582,
+      "aepe": 0.6277563243895818
+    },
+    "immature_latest_unique": {
+      "tested_points": 29355,
+      "valid_points": 29355,
+      "valid_fraction": 1.0,
+      "rmse": 3.284833006285616,
+      "mae_scalar": 0.7499404619542274,
+      "aepe": 0.7499404619542276
+    },
+    "immature_final_latest_unique": {
+      "tested_points": 4015,
+      "valid_points": 4015,
+      "valid_fraction": 1.0,
+      "rmse": 0.22005701696750907,
+      "mae_scalar": 0.12231309182898181,
+      "aepe": 0.12231309182898167
+    },
+    "immature_nonfinal_latest_unique": {
+      "tested_points": 29355,
+      "valid_points": 29355,
+      "valid_fraction": 1.0,
+      "rmse": 3.284833006285616,
+      "mae_scalar": 0.7499404619542274,
+      "aepe": 0.7499404619542276
+    },
+    "marginalized_latest_unique": {
+      "tested_points": 12776,
+      "valid_points": 12776,
+      "valid_fraction": 1.0,
+      "rmse": 0.3585070744185069,
+      "mae_scalar": 0.1228571837492783,
+      "aepe": 0.12285718374927837
+    },
+    "marginalized_final_latest_unique": {
+      "tested_points": 11200,
+      "valid_points": 11200,
+      "valid_fraction": 1.0,
+      "rmse": 0.37634755060083275,
+      "mae_scalar": 0.12492880127963288,
+      "aepe": 0.12492880127963284
+    },
+    "marginalized_nonfinal_latest_unique": {
+      "tested_points": 12776,
+      "valid_points": 12776,
+      "valid_fraction": 1.0,
+      "rmse": 0.3585070744185069,
+      "mae_scalar": 0.1228571837492783,
+      "aepe": 0.12285718374927837
+    },
+    "outlier_latest_unique": {
+      "tested_points": 1997,
+      "valid_points": 1997,
+      "valid_fraction": 1.0,
+      "rmse": 3.373917471774241,
+      "mae_scalar": 0.8774984225453231,
+      "aepe": 0.8774984225453233
+    },
+    "outlier_final_latest_unique": {
+      "tested_points": 1508,
+      "valid_points": 1508,
+      "valid_fraction": 1.0,
+      "rmse": 3.441622015914935,
+      "mae_scalar": 0.9397478007617982,
+      "aepe": 0.9397478007617985
+    },
+    "outlier_nonfinal_latest_unique": {
+      "tested_points": 1997,
+      "valid_points": 1997,
+      "valid_fraction": 1.0,
+      "rmse": 3.373917471774241,
+      "mae_scalar": 0.8774984225453231,
+      "aepe": 0.8774984225453233
+    }
+  },
+  "outputs": {
+    "poses_csv": "/home/daniel/Optical_Flow/NFlowNet/Results/dso_office_smoke/poses.csv",
+    "dso_points_csv": "/home/daniel/Optical_Flow/NFlowNet/Results/dso_office_smoke/keyframe_points.csv",
+    "sparse_normal_flow_points_csv": "/home/daniel/Optical_Flow/NFlowNet/Results/dso_office_smoke_sparse_normal_flow_points.csv",
+    "frame_metrics_csv": "/home/daniel/Optical_Flow/NFlowNet/Results/dso_office_smoke_frame_metrics.csv"
+  }
+}

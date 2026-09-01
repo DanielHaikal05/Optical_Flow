@@ -1,0 +1,90 @@
+{
+  "sequence": "interlaken_00_c",
+  "sequence_dir": "/home/daniel/Optical_Flow/Datasets/DSEC/interlaken_00_c",
+  "sample_dir": "analysis/event_suppression_dsec_50k_uniform_20260817_112000/interlaken_00_c/interlaken_00_c_global50k_p0p75",
+  "output_dir": "analysis/event_suppression_dsec_50k_uniform_20260817_112000/interlaken_00_c/event_suppression",
+  "checkpoint": "/home/daniel/Optical_Flow/event_suppression/checkpoints/event_suppression_checkpoints/model_epoch_49.pth",
+  "config": "/home/daniel/Optical_Flow/event_suppression/evsup/configs/validate_evimo.json",
+  "representation": "normalized signed-polarity two-bin voxel grid",
+  "threshold": 0.5,
+  "num_intervals": 268,
+  "total_sampled_events": 12434016,
+  "mean_dynamic_fraction": 0.0019261116293532335,
+  "median_dynamic_fraction": 0.0018196614583333333,
+  "max_dynamic_fraction": 0.0058203125,
+  "nonzero_mask_frames": 268,
+  "frames_over_1pct": 0,
+  "frames_over_5pct": 0,
+  "top_dynamic_fraction_frames": [
+    [
+      48,
+      0.0058203125
+    ],
+    [
+      94,
+      0.005120442708333333
+    ],
+    [
+      74,
+      0.005032552083333333
+    ],
+    [
+      237,
+      0.0050260416666666665
+    ],
+    [
+      211,
+      0.004970703125
+    ],
+    [
+      253,
+      0.004866536458333333
+    ],
+    [
+      213,
+      0.004313151041666667
+    ],
+    [
+      88,
+      0.004280598958333334
+    ],
+    [
+      81,
+      0.0040071614583333335
+    ],
+    [
+      244,
+      0.003977864583333333
+    ]
+  ],
+  "sampler_summary": {
+    "sequence_dir": "/home/daniel/Optical_Flow/Datasets/DSEC/interlaken_00_c",
+    "events_path": "/home/daniel/Optical_Flow/Datasets/DSEC/interlaken_00_c/Events/events.h5",
+    "rectify_path": "/home/daniel/Optical_Flow/Datasets/DSEC/interlaken_00_c/Events/rectify_map.h5",
+    "calibration_path": "/home/daniel/Optical_Flow/Datasets/DSEC/interlaken_00_c/Calibration/cam_to_cam.yaml",
+    "output_dir": "/home/daniel/Optical_Flow/analysis/event_suppression_dsec_50k_uniform_20260817_112000/interlaken_00_c/interlaken_00_c_global50k_p0p75",
+    "interval_s": 0.1,
+    "start_interval": 0,
+    "num_intervals": 268,
+    "sampling_mode": "global",
+    "max_events_per_interval": 50000,
+    "grid_cols": null,
+    "grid_rows": null,
+    "max_events_per_grid_cell": null,
+    "density_power": null,
+    "density_offset": null,
+    "grid_cell_count": null,
+    "grid_max_events_per_interval": null,
+    "seed": 7,
+    "width": 640,
+    "height": 480,
+    "fx": 569.7632987676102,
+    "fy": 569.7632987676102,
+    "cx": 335.0999870300293,
+    "cy": 221.23667526245117,
+    "written_events": 12434016,
+    "mean_written_events_per_interval": 46395.58208955224,
+    "flow_source": "VecKM DSEC normal flow, run after this sampling step",
+    "coordinate_source": "DSEC rectified event pixels from rectify_map.h5"
+  }
+}

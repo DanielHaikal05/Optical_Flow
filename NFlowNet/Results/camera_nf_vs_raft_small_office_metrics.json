@@ -1,0 +1,62 @@
+{
+  "sequence_root": "/home/daniel/Optical_Flow/Datasets/TartanAir/Office",
+  "pairs": 611,
+  "device": "cuda",
+  "raft": {
+    "weights": "C_T_V2",
+    "num_flow_updates": 12
+  },
+  "metrics_note": "RMSE is scalar normal-flow RMSE in pixels/frame. AEPE is vector endpoint error after comparing predicted normal-flow vectors to TartanAir normal-flow GT vectors. gt_valid uses all GT-valid normal-flow pixels; common uses GT-valid pixels where Camera_NF also passes its gradient threshold.",
+  "timing_note": "Camera_NF timing covers image read, Camera_NF preprocessing, and normal-flow computation. RAFT-small timing covers image read, TorchVision transforms, model forward, and CPU transfer; forward_only covers the synchronized model forward pass.",
+  "camera_nf": {
+    "gt_valid": {
+      "pixels": 54989283,
+      "frames": 611,
+      "rmse": 12.838704831576779,
+      "mae_scalar": 8.406373298386047,
+      "aepe": 8.457241808570908,
+      "mean_coverage": 0.2970785065166567
+    },
+    "common": {
+      "pixels": 15170526,
+      "frames": 611,
+      "rmse": 9.273333917340516,
+      "mae_scalar": 5.478935505408952,
+      "aepe": 5.6633207817363,
+      "mean_coverage": 0.2970785065166567
+    },
+    "timing": {
+      "seconds": 9.465372748000135,
+      "ms_per_pair": 15.491608425532135,
+      "pairs_per_second": 64.55107646226541
+    }
+  },
+  "raft_small": {
+    "gt_valid": {
+      "pixels": 54989283,
+      "frames": 611,
+      "rmse": 1.8559201934561511,
+      "mae_scalar": 0.5154435475444427,
+      "aepe": 0.5154435457507693,
+      "mean_coverage": 0.2970785065166567
+    },
+    "common": {
+      "pixels": 15170526,
+      "frames": 611,
+      "rmse": 1.8727292879158859,
+      "mae_scalar": 0.6649850956566938,
+      "aepe": 0.664985093825982,
+      "mean_coverage": 0.2970785065166567
+    },
+    "timing": {
+      "seconds": 45.65957576300016,
+      "ms_per_pair": 74.72925656792171,
+      "pairs_per_second": 13.381639881444507
+    },
+    "forward_only_timing": {
+      "seconds": 40.28170301599994,
+      "ms_per_pair": 65.92750084451708,
+      "pairs_per_second": 15.168176970008197
+    }
+  }
+}

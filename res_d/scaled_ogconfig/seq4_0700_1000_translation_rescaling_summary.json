@@ -1,0 +1,44 @@
+{
+  "settings": {
+    "sequence_dir": "/home/DanielH/Optical_Flow/Datasets/Drone_footage/4",
+    "event_stream_dir": "Datasets/Drone_footage/4/event_stream_0700_1000_sample30",
+    "depth_dir": "Results_Drone/depthanyevent_seq4_33ms_metric_dsec_0700_1000_dgx/raw",
+    "training_set": "EVIMO",
+    "ensemble": 3,
+    "frame_range": [
+      700,
+      1000
+    ],
+    "step_us": 33333,
+    "dt_seconds": 0.033333,
+    "weighting_mode": "uniform",
+    "use_rotational_compensation": false,
+    "translation_output_type": "velocity",
+    "coordinate_frame": "camera",
+    "depth_postprocess": "depthanyevent_logdepth",
+    "depth_clip_distance": 80.0,
+    "depth_reg_factor": 3.70378,
+    "depth_note": "Depth AnyEvent output is converted from normalized log depth before event-pixel sampling.",
+    "rotation_note": "First proof-of-concept uses zero rotational compensation."
+  },
+  "selection": {
+    "frames_attempted": 301,
+    "frames_with_rows": 301,
+    "observable_frames": 301,
+    "skipped": {
+      "empty": 0,
+      "low_motion_events": 0,
+      "missing_depth": 0,
+      "svm_error": 0
+    }
+  },
+  "summary": {
+    "scale_mean": 2.2068285789889477,
+    "scale_median": 1.9800873436558546,
+    "scale_min": -0.4062402960620844,
+    "scale_max": 7.260973032584439,
+    "residual_rmse_mean": 0.04464858185845591,
+    "scale_valid_points_mean": 8263.511627906977
+  },
+  "csv_path": "Results_Drone/translation_rescaling_seq4_0700_1000_sample30_logdepth_metric/seq4_0700_1000_translation_rescaling_metrics.csv"
+}

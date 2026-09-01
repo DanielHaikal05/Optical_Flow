@@ -1,0 +1,31 @@
+{
+  "source_metrics_csv": "Results_Drone/translation_rescaling_seq4_0700_1000_sample30_logdepth_metric/seq4_0700_1000_translation_rescaling_metrics.csv",
+  "emoflow_rotation_source": "E-MoFlow/outputs/drone_matrice/seq4_frames_0000_1000_max20k_dgx/merged_outputs/motion/motion_6dof_predicted_raw_sequence_values.npz",
+  "alignment": "VecKM frames aligned to E-MoFlow by full-sequence physical time: frame*0.033333 + 0.5*dt seconds.",
+  "rotation_model": "Integrated E-MoFlow pred_angular_raw_rad as camera/body-frame angular velocity with R_wc[k+1] = R_wc[k] Exp(omega_body dt). Initial R_wc at frame 700 is identity.",
+  "frames": [
+    700,
+    1000
+  ],
+  "time_full_sequence_s": [
+    23.3497665,
+    33.3496665
+  ],
+  "final_camera_integrated_position": [
+    -0.040047207163439465,
+    0.20672246227483654,
+    -8.622076671753637
+  ],
+  "final_world_integrated_position": [
+    -0.750325415778523,
+    0.5089092556191531,
+    -8.597919122697247
+  ],
+  "final_relative_orientation_roll_pitch_yaw_deg": [
+    1.4489538880057973,
+    11.979785022512965,
+    -22.137937107101024
+  ],
+  "omega_norm_mean_radps": 0.04458769889018294,
+  "omega_norm_max_radps": 0.07931999013021696
+}
